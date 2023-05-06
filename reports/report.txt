@@ -1,0 +1,20 @@
+Cluster 0 Theme: Smak.
+5 - Doskona³y smak
+5 - Nigdy wczeœniej nie jad³em nic tak dobrego!
+4 - Ca³kiem smaczne
+----------------------------------------------------------------------------------------------------
+Cluster 1 Theme: Uszkodzone opakowanie.
+2 - Rozerwana paczka
+4 - Uszkodzona paczka ale chlebek przepyszny
+3 - Smaczne, ale opakowanie przysz³o uszkodzone
+----------------------------------------------------------------------------------------------------
+Cluster 2 Theme: Orzechy w chlebie.
+4 - Bardzo dobry chleb. Dlaczego w œrodku jest orzech?
+3 - Œladowe iloœci orzechów XDDD
+1 - Znalaz³em orzech a mam alergiê
+----------------------------------------------------------------------------------------------------
+Cluster 3 Theme: pozytywna opinia.
+5 - Wszystko ok!
+4 - ok
+5 - ok
+----------------------------------------------------------------------------------------------------
