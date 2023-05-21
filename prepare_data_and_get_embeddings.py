@@ -5,7 +5,12 @@ import tiktoken
 import openai
 from openai.embeddings_utils import get_embedding
 
-def prepare_data_and_get_embeddings(input_file_name="food_reviews_100.csv", output_file_name="food_reviews_embeddings_100.csv"):
+# def prepare_data_and_get_embeddings(input_file_name="food_reviews_100_ansi.csv", output_file_name="food_reviews_embeddings_100_ansi.csv", file_encoding="ansi"):
+def prepare_data_and_get_embeddings(
+        input_file_name="food_reviews_100_utf8.csv", 
+        output_file_name="food_reviews_embeddings_100_utf8.csv", 
+        file_encoding='utf8'
+        ):
     """
     Function prepare_data_and_get_embeddings():
     * loads a CSV file with produscts reviews, 
@@ -27,17 +32,17 @@ def prepare_data_and_get_embeddings(input_file_name="food_reviews_100.csv", outp
     # load data...
     print("Data loading started...")
     input_datapath = os.path.join("data", input_file_name)
-    df = pd.read_csv(input_datapath, sep=';',index_col=0, encoding= 'ansi') #, encoding= 'unicode_escape')
+    df = pd.read_csv(input_datapath, sep=';',index_col=0, encoding=file_encoding)
     print("Data loading completed!")
-
+    
     # ... & inspect dataset
     df = df[["Score", "Text"]] # remove unnecessary columns
     df = df.dropna() # remove missing values
     # df.head(2) # return the first n rows
 
     # add column with lenght of Text in tokens
-    encoding = tiktoken.get_encoding(embedding_encoding)
-    df["n_tokens"] = df.Text.apply(lambda x: len(encoding.encode(x)))
+    encoding_cost = tiktoken.get_encoding(embedding_encoding)
+    df["n_tokens"] = df.Text.apply(lambda x: len(encoding_cost.encode(x)))
     # omit reviews that are too long to embed
     top_n = 1000
     df = df[df.n_tokens <= max_tokens].tail(top_n)
@@ -55,9 +60,9 @@ def prepare_data_and_get_embeddings(input_file_name="food_reviews_100.csv", outp
 
     # ...and save them for future reuse
     output_datapath = os.path.join("data", output_file_name)
-    df.to_csv(output_datapath, sep=';', encoding= 'ansi')
+    df.to_csv(output_datapath, sep=';', encoding=file_encoding)
     print("Data saved!")
-    print(df.head(2))
+    print(df.head(5))
 
 
 if __name__ == "__main__":

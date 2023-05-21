@@ -1,0 +1,28 @@
+Cluster 0 Theme: produkt lub usługa.
+5 - Dla mnie bomba!!!
+3 - Smak przeciętny
+5 - Wszystko ok!
+3 - ok
+4 - Ok, chociaż smak mógłby być lepszy.
+----------------------------------------------------------------------------------------------------
+Cluster 1 Theme: Opakowanie uszkodzone w transporcie.
+3 - Smaczne, ale opakowanie przyszło uszkodzone
+4 - Chętnie zamówię ponownie
+2 - Opakowanie nie było wystarczająco wytrzymałe i zostało uszkodzone w tr
+2 - Rozerwana paczka
+3 - Lepszy niż w supermarkecie ale ciągle słaba jakość
+----------------------------------------------------------------------------------------------------
+Cluster 2 Theme: Znalezienie orzecha w pieczywie.
+1 - Znalazłem orzech a mam alergię
+1 - Orzechy w chlebie - zupełnie niepoważne! Ponadto naderwana paczka
+4 - Chleb był świeży i puszysty, ale w środku znajdował się orzech.
+5 - Nigdy wcześniej nie jadłem nic tak dobrego!
+2 - Wszystko ok, aczkolwiek znalazłem orzech w pieczywie. Dziwne
+----------------------------------------------------------------------------------------------------
+Cluster 3 Theme: jakość opakowania chleba i jego cena.
+4 - Jak na swoją cenę to chleb nawet smaczny
+2 - Chleb był źle zapakowany i dotarł do mnie w stanie mocno zgniecionym.
+1 - Otwarte opakowanie chleba!!! Absurd!!!
+4 - Chleb był bardzo smaczny, ale opakowanie było zbyt cienkie i nie ochro
+4 - Cena była przystępna, ale chleb mógłby być lepiej zapakowany.
+----------------------------------------------------------------------------------------------------

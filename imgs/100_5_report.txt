@@ -1,0 +1,35 @@
+Cluster 0 Theme: Ogólna opinia o produkcie.
+3 - Smak przeciętny
+5 - Alles gut!
+5 - Wszystko ok!
+5 - Dla mnie bomba!!!
+5 - Wszystko ok
+----------------------------------------------------------------------------------------------------
+Cluster 1 Theme: Uszkodzone opakowanie.
+3 - Smaczne, ale opakowanie przyszło uszkodzone
+2 - Rozerwana paczka
+3 - Źle zapakowane
+5 - Szybka dostawa
+3 - Uszkodzone opakowanie
+----------------------------------------------------------------------------------------------------
+Cluster 2 Theme: Znalezienie orzecha w chlebie.
+1 - Znalazłem orzech a mam alergię
+1 - Orzechy w chlebie - zupełnie niepoważne! Ponadto naderwana paczka
+1 - W chlebie znalazłam twarde składniki - najpewniej orzechy!
+1 - Myślałem że zjadłem kamień! Nigdy więcej nie kupię w tym sklepie!!!
+3 - Podczas jedzenia chleba natrafiłem na orzech.
+----------------------------------------------------------------------------------------------------
+Cluster 3 Theme: Opakowanie było uszkodzone lub rozerwane, a jakość chleba była niezadowalająca.
+1 - Opakowanie rozerwane. Chleb dotarł suchy i bez smaku.
+4 - Chleb miał wspaniały smak, ale paczka przyszła uszkodzona.
+3 - Chleb nie był najlepszy.
+2 - Nie byłem zadowolony z jakości chleba który dostałem.
+4 - Chleb był smaczny, ale opakowanie było uszkodzone.
+----------------------------------------------------------------------------------------------------
+Cluster 4 Theme: Chleb
+5 - Przepyszny chleb
+3 - Chleb dobry ale wolę stacjonarne piekarnie.
+5 - Zawsze dostaję chleb świeży, bez względu na to, kiedy dokonuję zamówie
+3 - Chlebek niezły aczkolwiek nie porwał mnie nadzwyczajnie
+4 - Chleb bardzo dobry, choż pognieciony :(
+----------------------------------------------------------------------------------------------------

@@ -11,8 +11,11 @@ import matplotlib.pyplot as plt
 
 import openai
 
-
-def data_analysis(input_preprocessed_file_name="food_reviews_embeddings_100.csv", report_name_prefix=""):
+# def data_analysis(input_preprocessed_file_name="food_reviews_embeddings_100_ansi.csv", report_name_prefix="100_4_", file_encoding='ansi'):
+def data_analysis(
+        input_preprocessed_file_name="food_reviews_embeddings_100_utf8.csv", 
+        report_name_prefix="100_4_", 
+        file_encoding='utf8'):
     """
     Function reads preprocessed data and then flattens the embeddings using t-SNE.
     Next, it draws two charts:
@@ -22,7 +25,7 @@ def data_analysis(input_preprocessed_file_name="food_reviews_embeddings_100.csv"
 
     # load data
     input_datapath = os.path.join("data", input_preprocessed_file_name)
-    df = pd.read_csv(input_datapath, sep=';',index_col=0, encoding= 'ansi')
+    df = pd.read_csv(input_datapath, sep=';',index_col=0, encoding=file_encoding)
 
     # convert string to numpy array
     # print("length before: " + str(len(df["embedding"].iloc[0]))) # 34422
@@ -77,7 +80,7 @@ def data_analysis(input_preprocessed_file_name="food_reviews_embeddings_100.csv"
     ax1.legend(reversed(handles), reversed(labels), title='Score', loc='upper left')
     
     # draw bottom chart - Clusters
-    for category, color in enumerate(["purple", "green", "red", "blue"]): # , "orange", "gray"
+    for category, color in enumerate(["purple", "green", "red", "blue", "orange", "gray"][:n_clusters]):
         xs = np.array(x)[df.Cluster == category]
         ys = np.array(y)[df.Cluster == category]
         ax2.scatter(xs, ys, color=color, alpha=0.3)
@@ -122,7 +125,7 @@ def get_report_about_found_clusters(df, name_of_report, n_clusters):
         If no OpenAI API kei is set as environment variable in the system.
     """
 
-    rev_per_cluster = 3
+    rev_per_cluster = 5
     used_tokens = 0
 
     # open file to save report
