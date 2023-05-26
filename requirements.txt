@@ -2,6 +2,7 @@ matplotlib
 numpy
 openai
 pandas
+plotly
 scikit-learn
 scipy
 tiktoken
